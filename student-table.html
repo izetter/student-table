@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student table</title>
+    <link rel="stylesheet" href="student-table.css">
+    <script src="student-table.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <td>Number of students:</td>
+        </thead>
+        <tr>
+            <td><input id="students" type="number" min="1"></td>
+        </tr>
+        <tr>
+            <td><button onclick="checkStudents()">Submit</button></td>
+        </tr>
+    </table>
+    <div id="inputs"></div>             <!-- The input table will be inserted here once generated -->
+    <div id="results"></div>            <!-- The results table will be inserted here once generated  -->
+    <div id="errors"></div>             <!-- This is the part where error 'logs' will be written in the document -->
+</body>
+</html>

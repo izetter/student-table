@@ -179,3 +179,11 @@ function sumelements(array) {
     }
     return accumulator;
 }
+
+
+const studentsInput = document.querySelector('#students');
+const submitBtn = document.querySelector('#submit-btn');
+
+studentsInput.addEventListener('keyup', (evt) => {
+    if (evt.key === 'Enter') submitBtn.click();
+})

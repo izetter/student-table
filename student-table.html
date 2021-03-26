@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student table</title>
     <link rel="stylesheet" href="student-table.css">
-    <script src="student-table.js"></script>
+    <script src="student-table.js" defer></script>
 </head>
 <body>
     <table>
@@ -16,7 +16,7 @@
             <td><input id="students" type="number" min="1"></td>
         </tr>
         <tr>
-            <td><button onclick="checkStudents()">Submit</button></td>
+            <td><button id="submit-btn" onclick="checkStudents()">Submit</button></td>
         </tr>
     </table>
     <div id="inputs"></div>             <!-- The input table will be inserted here once generated -->
